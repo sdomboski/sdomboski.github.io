@@ -1,0 +1,159 @@
+:root {
+    /* Lunar Solarium tokens (from Stitch brand kit) */
+    --color-surface: #051424;
+    --color-surface-container: #122131;
+    --color-surface-container-high: #1c2b3c;
+    --color-on-surface: #d4e4fa;
+    --color-on-surface-variant: #a9bdd6;
+    --color-entry-header: #ffc880;
+    --color-primary: #f5a623;
+    --color-tertiary: #9bdaff;
+    --color-outline-variant: #3a4a5e;
+
+    --font-heading: "Space Grotesk", "Roboto", sans-serif;
+    --font-body: "Inter", "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+header {
+    text-align: center;
+    color: var(--color-tertiary);
+    padding: 1.5rem 1rem 2rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+}
+
+header h4 {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-on-surface);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main > div {
+    flex: 1 1 320px;
+    background-color: var(--color-surface-container-high);
+    border: 1px solid var(--color-outline-variant);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+main > div.work {
+    flex-basis: 100%;
+}
+
+h3.section {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+    padding: 0 0 0.5rem;
+    border-bottom: 1px solid var(--color-outline-variant);
+}
+
+main p {
+    font-weight: 600;
+    margin: 1rem 0 0.25rem;
+}
+
+main p:first-of-type {
+    margin-top: 0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 1rem 0 0.25rem;
+    color: var(--color-entry-header);
+}
+
+.entry-header:first-of-type {
+    margin-top: 0;
+}
+
+.entry-header p {
+    margin: 0;
+}
+
+.entry-header .date {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+main ul {
+    margin: 0 0 0.5rem;
+    padding-left: 1.25rem;
+}
+
+main li {
+    color: var(--color-on-surface-variant);
+    margin-bottom: 0.25rem;
+    line-height: 1.5;
+}
+
+table.skillstb {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+table.skillstb td {
+    border: 1px solid var(--color-outline-variant);
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+}
+
+table.skillstb td:first-child {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-entry-header);
+    width: 30%;
+    white-space: nowrap;
+}
+
+footer {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.copyright {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-on-surface-variant);
+    margin: 0;
+}
